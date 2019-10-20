@@ -28,6 +28,34 @@ $(window).on('load', function() {
 });
 
 $(window).on('load', function() {
+    TweenMax.to($('#container'), 1, {
+        css: {
+            opacity: 1
+        },
+        ease: Quad.easeInOut,
+    });
+});
+
+$(window).on('load', function() {
+    TweenMax.to($('#contet'), 1, {
+        css: {
+            opacity: 1
+        },
+        ease: Quad.easeInOut,
+    });
+});
+
+
+$(window).on('load', function() {
+    TweenMax.to($('p'), 1, {
+        css: {
+            opacity: 1
+        },
+        ease: Quad.easeInOut,
+    });
+});
+
+$(window).on('load', function() {
     TweenMax.to($('#title'), 1, {
         css: {
             opacity: 1

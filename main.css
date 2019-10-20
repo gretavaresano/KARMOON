@@ -37,7 +37,9 @@ body {
   opacity: 0;
   index: 2;
 }
-
+p {
+  opacity: 0;
+}
 #nasa{
   color: black;
   font-family: clifton;
@@ -60,9 +62,8 @@ canvas {
   opacity: 0;
   color: white;
   position: absolute;
-
   left: 20px;
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 body #container #first {
