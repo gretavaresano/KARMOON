@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Cooking Nasa</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<div id="container">
+			<div id="first">
+				<p id="firstSentence">
+		<span id="bea">Build a planet is a bit like making a recipe.</span><br><br>
+    Cooking is a matter of chemistry and physics.<br>
+    You need the right doses and proportions<br> to make a good recipe.
+    <br><br>We challenge you!<br>
+    Make your recipe with Cooking.<span id="bea">NasaVR</span>!<br><br><span id="bea">Click on the moon to discover the project.</span></p>
+	</div>
+
+	</div>
+  <div id="title">Cooking.<span id="nasa">NasaVR</span></div>
+	<script id="vertexShader" type="x-shader/x-vertex">
+	varying vec3 vNormal;
+	void main()
+	{
+	 vNormal = normalize( normalMatrix * normal );
+	   gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+	}
+	</script>
+	<script id="fragmentShader" type="x-shader/x-vertex">
+	varying vec3 vNormal;
+	void main()
+	{
+    float intensity = pow( 0.7 - dot( vNormal, vec3( 0.0, 0.0, 1.0 ) ), 4.0 );
+	  gl_FragColor = vec4( 1.0, 1.0, 0.2, 0.2 ) * intensity;
+	}
+	</script>
+
+
+
+<link rel="stylesheet" href="main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/OrbitControls.js"></script>
+<script src="main.js"></script>
+</head>
+</html>

@@ -1,0 +1,80 @@
+@font-face {
+  font-family: clifton;
+  src: url(font/beatrice.otf);
+}
+@font-face {
+  font-family: lausanne;
+  src: url(font/lausanne.otf);
+}
+
+html {
+    user-select: none;
+}
+
+body {
+  color: black;
+  font-family: lausanne;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-size: 1.8vw;
+  user-select: none;
+}
+
+#title {
+  color: black;
+  font-family: lausanne;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 9vw;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 0;
+  index: 2;
+}
+
+#nasa{
+  color: black;
+  font-family: clifton;
+  font-weight: 200;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  index: 3;
+}
+
+#bea {
+  font-family: clifton;
+    font-size: 1.8vw;
+}
+
+#content {
+  position: absolute;
+  opacity: 0;
+  color: white;
+  position: absolute;
+
+  left: 20px;
+    border: 1px solid black;
+}
+
+body #container #first {
+  opacity: 0;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 20px;
+}
+
+body #container #first #firstSentence {
+  margin: 0;
+  font: lausanne;
+  color: black;
+}
